@@ -81,7 +81,6 @@ public class Rook extends ChessFigure {
             min_ = Math.min(y, begin_y);
             while (max_ > min_) {
                 is_move = (is_empty_(x, max_, figure));
-                //TODO: ПРОЕРКА НА СРУБАНИЕ И ПРОВЕРКА НА ТО, ЧТО СРУБИЛИ НЕ КОРОЛЯ
                 max_ -= 1;
             }
         } else {
@@ -89,7 +88,6 @@ public class Rook extends ChessFigure {
             min_ = Math.min(x, begin_x);
             while (max_ > min_) {
                 is_move = (is_empty_(max_, y, figure));
-                //TODO: ПРОЕРКА НА СРУБАНИЕ И ПРОВЕРКА НА ТО, ЧТО СРУБИЛИ НЕ КОРОЛЯ
                 max_ -= 1;
             }
         }

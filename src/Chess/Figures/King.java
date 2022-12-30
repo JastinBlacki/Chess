@@ -29,9 +29,6 @@ public class King extends ChessFigure {
              & ((coordinateFrom.getY() - coordinateTo.getY() == 0) | Math.abs(coordinateFrom.getY() - coordinateTo.getY()) == 1);
     }
 
-    // TODO: ОПРЕДЕЛИТЬ/ПОЛУЧИТЬ ИНФОРМАЦИЮ О ФИГУРЕ, КОТОРАЯ СТАВИТ ШАХ можно ли ее срубить другой фигурой? Если можно, то срубить
-    //  Королем нельзя срубить не при каком раскладе
-    // TODO: РОКИРОВКА ДЛИННАЯ И КОРОТКАЯ
     public List<String> is_mat(int x, int y, Collection<String> black_figure, Collection<String> white_figure){
         List<String> coordinate_x = new ArrayList<String>();
         List<String> coordinate_y = new ArrayList<String>();
